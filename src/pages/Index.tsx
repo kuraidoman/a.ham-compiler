@@ -113,7 +113,7 @@ const Index = () => {
               <section>
                 <h3 className="mb-2 text-lg font-bold font-sans text-[#8b7355]">3. Operators & Syntax</h3>
                 <ul className="pl-5 space-y-1 list-disc">
-                  <li><strong>(!):</strong> Delimiter</li>
+                  <li><strong>DELIMITER (!):</strong> Delimiter</li>
                   <li><strong>WRITE:</strong> Assignment (=)</li>
                   <li><strong>YOURE LIKE ME:</strong> Equality (==)</li>
                   <li><strong>OUTGUNNED:</strong> Greater Than </li> 
@@ -123,14 +123,21 @@ const Index = () => {
               </section>
 
               <section>
-                <h3 className="mb-2 text-lg font-bold font-sans text-[#8b7355]">4. Scope Architecture</h3>
-                <p>Strict Indentation is required for Control Flow (<strong>IF</strong> and <strong>NON STOP</strong>).</p>
-                <p className="mt-1"><span className="px-2 py-1 bg-stone-200 rounded text-amber-800">4 Spaces / 1 Tab = 1 Indent Level</span></p>
+                <h3 className="mb-2 text-lg font-bold font-sans text-[#8b7355]">4. Control Flow</h3>
+                <ul className="pl-5 space-y-1 list-disc">
+                  <li><strong>IF:</strong> If statement</li>
+                  <li><strong>NON STOP:</strong> While loop</li>
+                </ul>
+              </section>
+              
+              <section>
+                <h3 className="mb-2 text-lg font-bold font-sans text-[#8b7355]">5. Scope Architecture</h3>
+                <p>Strict Indentation is required to group code blocks inside Control Flow statements.</p>
+                <p className="mt-1"><span className="px-2 py-1 bg-stone-200 rounded text-amber-800">4 Spaces = 1 Indent Level</span></p>
               </section>
 
-              {/* --- NEW SAMPLE CODE SECTION --- */}
               <section className="pt-6 mt-6 border-t-2 border-[#8b7355]/20">
-                <h3 className="mb-3 text-lg font-bold font-sans text-[#8b7355]">5. Sample Code</h3>
+                <h3 className="mb-3 text-lg font-bold font-sans text-[#8b7355]">6. Sample Code: The Master Class</h3>
                 <pre className="p-4 overflow-x-auto text-sm bg-[#8b7355]/10 text-black rounded-md border border-[#8b7355]/30">
                   <code>
 {`DEAR ALEXANDER
@@ -155,7 +162,6 @@ YOUR OBEDIENT SERVANT A.HAM`}
                   </code>
                 </pre>
               </section>
-
             </div>
           </div>
         </div>
