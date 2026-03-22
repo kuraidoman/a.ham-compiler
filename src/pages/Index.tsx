@@ -83,7 +83,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      {/* --- CHEAT SHEET MODAL GOES HERE --- */}
+      {/* --- CHEAT SHEET MODAL --- */}
       {isCheatSheetOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
           <div className="relative w-full max-w-2xl p-8 overflow-y-auto rounded shadow-2xl bg-[#fdfaf5] text-stone-800 max-h-[80vh] border-2 border-[#d4c5b0]">
@@ -111,7 +111,8 @@ const Index = () => {
                 <ul className="pl-5 space-y-1 list-disc">
                   <li><strong>SHOT:</strong> Integer (4 Bytes)</li>
                   <li><strong>LETTER:</strong> String (8 Bytes)</li>
-                  <li><strong>VOTE:</strong> Boolean [SATISFIED / HELPLESS] (1 Byte)</li>
+                  <li><strong>VOTE:</strong> Boolean [SATISFIED (<span className="text-green-600 font-bold">TRUE</span>) / HELPLESS (<span className="text-red-600 font-bold">FALSE</span>)] (1 Byte)</li>
+                  <li><strong>STROKE:</strong> Character (1 Byte)</li>
                 </ul>
               </section>
 
@@ -119,17 +120,17 @@ const Index = () => {
                 <h3 className="mb-2 text-lg font-bold font-sans text-[#8b7355]">3. Operators & Syntax</h3>
                 <ul className="pl-5 space-y-1 list-disc">
                   <li><strong>WRITE:</strong> Assignment (=)</li>
-                  <li><strong>RISE UP / FALL BACK:</strong> Math (+ / -)</li>
                   <li><strong>YOURE LIKE ME:</strong> Equality (==)</li>
-                  <li><strong>!:</strong> Mandatory Statement Delimiter</li>
-                  <li><strong>DROP KNOWLEDGE:</strong> Output to Console</li>
+                  <li><strong>OUTGUNNED:</strong> Greater Than </li> 
+                  <li><strong>TALK LESS:</strong> Less Than </li> 
+                  <li><strong>AND / OR:</strong> Logical Conjunctions</li>
                 </ul>
               </section>
 
               <section>
                 <h3 className="mb-2 text-lg font-bold font-sans text-[#8b7355]">4. Scope Architecture</h3>
                 <p>Strict Indentation is required for Control Flow (<strong>IF</strong> and <strong>NON STOP</strong>).</p>
-                <p className="mt-1"><span className="px-2 py-1 bg-stone-200 rounded text-amber-800">4 Spaces = 1 Indent Level</span></p>
+                <p className="mt-1"><span className="px-2 py-1 bg-stone-200 rounded text-amber-800">4 Spaces / 1 Tab = 1 Indent Level</span></p>
               </section>
             </div>
           </div>
