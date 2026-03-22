@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Cinzel:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 10% 18%;
+
+    --card: 40 30% 93%;
+    --card-foreground: 220 10% 18%;
+
+    --popover: 40 33% 96%;
+    --popover-foreground: 220 10% 18%;
+
+    --primary: 43 72% 42%;
+    --primary-foreground: 40 33% 96%;
+
+    --secondary: 40 20% 88%;
+    --secondary-foreground: 220 10% 18%;
+
+    --muted: 40 15% 90%;
+    --muted-foreground: 220 8% 45%;
+
+    --accent: 43 72% 42%;
+    --accent-foreground: 40 33% 96%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 25% 82%;
+    --input: 40 25% 82%;
+    --ring: 43 72% 42%;
+
+    --radius: 0.375rem;
+
+    --terminal-bg: 220 15% 10%;
+    --terminal-fg: 80 40% 75%;
+    --terminal-accent: 43 72% 55%;
+
+    --editor-bg: 40 30% 97%;
+    --editor-line-bg: 40 20% 93%;
+    --editor-line-fg: 220 8% 55%;
+
+    --gold-glow: 0 0 12px hsl(43 72% 42% / 0.25);
+
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
