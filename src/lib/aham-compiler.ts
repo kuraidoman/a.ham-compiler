@@ -224,7 +224,7 @@ function parseAndAnalyze(
   tokens: Token[],
   logs: string[]
 ): { symbols: SymbolEntry[]; success: boolean } {
-  logs.push("═══ PARSER PHASE ═══");
+  logs.push("═══ PARSER & SEMANTIC PHASE ═══");
 
   const lines = source.split("\n");
   const symbols: SymbolEntry[] = [];
@@ -319,8 +319,6 @@ function parseAndAnalyze(
       logs.push(`  Line ${i + 1}: ✓ Declaration: ${TYPE_NAMES[typeKw]} ${name} [${size} bytes] at level ${level}`);
       
       // Semantic type check
-      logs.push("");
-      logs.push("═══ SEMANTIC PHASE ═══");
       if (typeKw === "SHOT") {
         if (!/^(\d+|\d+\s*[\+\-\*\/]\s*\d+)$/.test(value.trim())) {
           logs.push(`  Line ${i + 1}: ✗ FATAL SEMANTIC ERROR: Expected INT literal or basic Math expression for SHOT, got ${value}`);
