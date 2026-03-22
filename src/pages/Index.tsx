@@ -9,14 +9,8 @@ import { Book, X } from "lucide-react";
 
 const DEFAULT_CODE = `DEAR ALEXANDER
 
-SHOT year WRITE 1776!
-
-IF year YOURE LIKE ME 1776!
-    LETTER status WRITE "Revolution"!
-    SHOT troops WRITE 10000!
-    NON STOP troops YOURE LIKE ME 10000!
-        VOTE isWinning WRITE SATISFIED!
-        DROP KNOWLEDGE isWinning!
+LETTER greeting WRITE "Hello, World!"!
+DROP KNOWLEDGE greeting!
 
 YOUR OBEDIENT SERVANT A.HAM`;
 
